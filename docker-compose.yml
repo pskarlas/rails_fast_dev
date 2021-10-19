@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  _build: &image
+  build:
+  context: .
+  dockerfile: Dockerfile.dev
+ 
+  web: 
+    <<: *image
+    command: .scripts/start
+    volumes: 
+      - .:/code
+      - bundler:/user/local/bundle
+    ports: 
+      - 3000:3000
+    enviroment: 
+      - DATABASE_HOST=db
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=unbreakable
+    depends_on:
+      -db
+      
+  db: 
+    image: postgres:14
+    volumes: 
+      - db-data:/var/lib/postgresql/data
+    enviroment: 
+      - POSTGRES_PASSWORD=unbreakable
+volumes:
+  - db-data:
