@@ -8,7 +8,7 @@ RUN mkdir /code
 WORKDIR /code
 
 COPY Gemfile* /code/
-ADD script /code/script
+ADD scripts /code/scripts
 
 RUN bundle install --jobs 4
 ADD . /code
