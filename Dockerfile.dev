@@ -12,7 +12,7 @@ ADD Gemfile.lock /code/Gemfile.lock
 
 ADD script /code/script
 ADD config /code/config
-ADD .railsrc /code/.railsrc
+
 
 RUN bundle check || bundle install --jobs 4
 
