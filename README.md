@@ -1,6 +1,6 @@
 ![Group 5](https://user-images.githubusercontent.com/12958182/138089973-2d69eeeb-fc9e-41e4-be36-6154388d6c12.png)
 
-## Fast Rails 7 with esbuild, TailwindCSS & postgresql
+## Rails Fast Dev - Rails 7, esbuild, TailwindCSS, postgresql
 
 Spin up fast a plug & play containerized dev enviroment\
 with Rails 7-alpha2, esbuild, tailwindcss & postgresql
