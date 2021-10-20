@@ -9,7 +9,7 @@ services:
  
   web: 
     <<: *image
-    command: .scripts/start
+    command: ./script/start
     volumes: 
       - .:/code
       - bundler:/user/local/bundle
