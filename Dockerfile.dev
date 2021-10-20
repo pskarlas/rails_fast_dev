@@ -11,6 +11,7 @@ ADD Gemfile /code/Gemfile
 ADD Gemfile.lock /code/Gemfile.lock
 
 ADD script /code/script
+ADD config /code/config
 
 RUN bundle check || bundle install --jobs 4
 

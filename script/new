@@ -1,5 +1,4 @@
 #!/bin/bash
 
-bundle add foreman
-bundle check || bundle install
 bundle exec rails new . --force -T -j esbuild --css tailwind -d postgresql
+bundle add foreman --group "development, test"
