@@ -35,8 +35,6 @@ In root dir run the following docker cmds
  During step 2 choose to keep the database.yml\
  since it holds a default configuration  (based on DB container config).
  
- Enjoy!
- 
 ##### TO-DO
 + Introduce a rails template with most frequently used gems
 + Introduce a rails template following Domain Driven Design layering and conventions (including examples)
