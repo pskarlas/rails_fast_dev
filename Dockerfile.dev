@@ -7,8 +7,11 @@ RUN apt-get update -qq && apt-get install -y build-essential nodejs yarn
 RUN mkdir /code
 WORKDIR /code
 
-COPY Gemfile* /code/
-ADD scripts /code/scripts
+ADD Gemfile /code/Gemfile
+ADD Gemfile.lock /code/Gemfile.lock
 
-RUN bundle install --jobs 4
+ADD script /code/script
+
+RUN bundle check || bundle install --jobs 4
+
 ADD . /code
