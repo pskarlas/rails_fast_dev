@@ -33,7 +33,7 @@ In root dir run the following docker cmds
  ```
  
  During step 2 choose to keep the database.yml\
- since it holds a default configuration  (based on container config).
+ since it holds a default configuration  (based on DB container config).
  
  Enjoy!
  
