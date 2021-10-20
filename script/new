@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bundle exec rails new . --rc='./railsrc'
+bundle exec rails new . --rc='../.railsrc'
 bundle add foreman --group "development, test"
