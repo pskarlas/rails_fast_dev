@@ -31,7 +31,7 @@ with Rails 7-alpha2, esbuild, tailwindcss & postgresql
   ```sh  
  docker-compose up 
  ```
-
+ 
 ---
 #### TO-DO
 ---
