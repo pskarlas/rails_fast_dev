@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bundle exec rails new . --rc='../.railsrc'
+bundle exec rails new . --skip-bundle --javascript esbuild --css tailwind --database postgresql -T
 bundle add foreman --group "development, test"
