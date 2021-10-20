@@ -5,5 +5,4 @@ bundle exec rails db:setup
 
 rm -f tmp/pids/server.pid
 
-# bundle exec rails s -b 0.0.0.0
 bundle exec foreman start -f Procfile.dev -p 3000

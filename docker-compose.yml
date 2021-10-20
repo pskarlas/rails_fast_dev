@@ -16,7 +16,10 @@ services:
       - bundler:/user/local/bundle
     ports: 
       - 3000:3000
-    environment: 
+    environment:
+      - RAILS_MAX_THREADS=5
+      - RAILS_ENV=development
+      - RACK_ENV=development
       - DATABASE_HOST=db
       - DATABASE_USER=postgres
       - DATABASE_PASSWORD=unbreakable
