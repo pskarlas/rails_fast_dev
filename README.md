@@ -26,11 +26,11 @@ with Rails 7-alpha2, esbuild, tailwindcss & postgresql
  ```sh  
  docker-compose run --no-deps --rm web script/new  
  ```
- > Note:
+ > During this step
  > - choose to overwite Gemfile
  > - choose to **not overwrite** database.yml (it holds a configuration based on DB container config)
  
-##### 4 Spin the container
+##### 4 Spin the container up
 
   ```sh  
  docker-compose up 
