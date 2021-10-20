@@ -1,3 +1,5 @@
+![Group 5](https://user-images.githubusercontent.com/12958182/138089973-2d69eeeb-fc9e-41e4-be36-6154388d6c12.png)
+
 ## Fast Rails 7 with esbuild, TailwindCSS & postgresql
 
 Spin up fast a plug & play containerized dev enviroment\
@@ -24,8 +26,10 @@ with Rails 7-alpha2, esbuild, tailwindcss & postgresql
  ```sh  
  docker-compose run --no-deps --rm web script/new  
  ```
- > Note: choose to not overwrite database.yml\
- > since it holds a default configuration  (based on DB container config).
+ > Note:
+ > - choose to overwite Gemfile
+ > - choose to **not overwrite** database.yml (it holds a configuration based on DB container config)
+ 
 ##### 4 Spin the container
 
   ```sh  
