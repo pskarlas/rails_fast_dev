@@ -1,5 +1,0 @@
---skip-bundle
---javascript esbuild
---css tailwind
---database postgresql
--T
