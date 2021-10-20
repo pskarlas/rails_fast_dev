@@ -1,40 +1,42 @@
-# Fast Rails 7 with esbuild & TailwindCSS
+## Fast Rails 7 with esbuild, TailwindCSS & postgresql
 
-Spin up fast a bare mininal containerized dev enviroment\
-with Rails 7-alpha2, esbuild and tailwindcss
+Spin up fast a plug & play containerized dev enviroment\
+with Rails 7-alpha2, esbuild, tailwindcss & postgresql
 
 ###### Requirements: docker, docker-compose
 
 ---
-##### STEPS
+#### STEPS
 ---
 
-###### 1. Clone repository
+##### 1. Clone repository
 
  ```sh  
  git clone https://github.com/pskarlas/fast_rails_7.git
  ```
  
-###### 2. Build image (in repo root)
+##### 2. Build image (in repo root)
 
  ```sh  
  docker-compose build  
  ```
-###### 3. Create Rails app
+##### 3. Create Rails app
  ```sh  
  docker-compose run --no-deps --rm web script/new  
  ```
-###### 4 Spin the container
+ > Note: choose to not overwrite database.yml\
+ > since it holds a default configuration  (based on DB container config).
+##### 4 Spin the container
 
   ```sh  
  docker-compose up 
  ```
  
  During step 2 choose to not overwrite database.yml\
- since it holds a default configuration  (based on DB container config).
+ since it holds a default configuration (based on DB container config).
 
 ---
-##### TO-DO
+#### TO-DO
 ---
 
 + Introduce a rails template following Domain Driven Design layering and conventions (including examples)
