@@ -31,9 +31,6 @@ with Rails 7-alpha2, esbuild, tailwindcss & postgresql
   ```sh  
  docker-compose up 
  ```
- 
- During step 2 choose to not overwrite database.yml\
- since it holds a default configuration (based on DB container config).
 
 ---
 #### TO-DO
