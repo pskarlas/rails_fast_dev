@@ -40,6 +40,7 @@ with Rails 7-alpha2, esbuild, tailwindcss & postgresql
 #### TO-DO
 ---
 
-+ Introduce a rails template following Domain Driven Design layering and conventions (including examples)
-+ Introduce a rails template with most frequently used gems
++ Introduce a DDD template (folder structure)
++ Introduce a 'frequently used gems' template
++ Introduce arguments for image build / app name
 
